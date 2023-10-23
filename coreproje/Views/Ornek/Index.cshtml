@@ -1,0 +1,25 @@
+﻿@using coreproje.Controllers;
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>@ViewBag.name </p>
+<hr/>
+<p>@ViewData["age"]</p>
+@foreach (var item in ViewData["names"] as List<string>)
+{
+    <p>
+        @item
+    </p>
+}
+
+<p> @ViewBag.person.id - @ViewBag.person.name - @ViewBag.person.age</p>
+<br/>
+<p>@TempData["surname"]</p>
+
+@model List<Product2>;
+@foreach(var item in Model){
+    <p>@item.Id - @item.Name</p>
+}
