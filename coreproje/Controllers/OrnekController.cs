@@ -15,7 +15,7 @@ namespace coreproje.Controllers
         {
             ViewBag.name = "Asp.Net Core";
             ViewData["age"] = 30;
-            ViewData["names"] = new List<string>() { "alparslan", "simge" };
+            ViewData["names"] = new List<string>() { "alparslan", "" };
             ViewBag.person = new { id = 1, name = "alparslan", age = 25 };
             var productList = new List<Product2>()
             {
